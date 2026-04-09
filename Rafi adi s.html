@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aquamarine Glass Profile</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e6f7f5, #d9f3ef);
+}
+
+/* CARD */
+.card {
+    width: 100%;
+    max-width: 380px;
+    background: rgba(127, 255, 212, 0.25);
+    backdrop-filter: blur(18px);
+    border-radius: 24px;
+    border: 1px solid rgba(127,255,212,0.4);
+    box-shadow: 0 8px 25px rgba(0, 150, 136, 0.15);
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 150, 136, 0.25);
+}
+
+/* HEADER */
+.card-header {
+    position: relative;
+    text-align: center;
+    padding: 35px 20px 25px 20px;
+}
+
+/* AVATAR DI POJOK */
+.avatar {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 3px solid rgba(255,255,255,0.7);
+
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,100% {transform: translateY(0);}
+    50% {transform: translateY(-6px);}
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEXT */
+.card-header h1 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #1f3f3d;
+}
+
+.card-header p {
+    font-size: 13px;
+    color: #5f7c7a;
+}
+
+/* BODY */
+.card-body {
+    padding: 20px;
+}
+
+/* INFO */
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+    transition: 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateX(6px);
+}
+
+/* ICON */
+.icon-box {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(127,255,212,0.35);
+    color: #1f7a74;
+}
+
+/* TEXT */
+.label {
+    font-size: 10px;
+    color: #6b8f8c;
+}
+
+.value {
+    font-size: 14px;
+    color: #1f3f3d;
+    font-weight: 600;
+}
+
+/* DIVIDER */
+.divider {
+    height: 1px;
+    background: rgba(0,0,0,0.05);
+    margin: 18px 0;
+}
+
+/* SOSIAL */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.social-link {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(127,255,212,0.35);
+    color: #1f7a74;
+    transition: 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-4px);
+    background: rgba(127,255,212,0.6);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="card-header">
+        <div class="avatar">
+            <img src="pqq.jpg" alt="Foto Profil">
+        </div>
+        <h1> RAFI ADI SAPUTRA</h1>
+        <p> SISWA |  </p>
+    </div>
+
+    <div class="card-body">
+
+        <div class="info-item">
+            <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div>
+                <div class="label">Kelas</div>
+                <div class="value">XII TJKT 2</div>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="icon-box"><i class="fa-solid fa-school"></i></div>
+            <div>
+                <div class="label">Sekolah</div>
+                <div class="value">SMK KOMPUTAMA MAJENANG</div>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="icon-box"><i class="fa-solid fa-gamepad"></i></div>
+            <div>
+                <div class="label">Hobi</div>
+                <div class="value"> Reading, Gaming, Just kiding</div>
+            </div>
+        </div>
+
+        <div class="info-item">
+            <div class="icon-box"><i class="fa-solid fa-briefcase"></i></div>
+            <div>
+                <div class="label">Cita-cita</div>
+                <div class="value"> Jadi pribadi yg lebih baik</div>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
